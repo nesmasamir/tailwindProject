@@ -1,0 +1,77 @@
+<!--navbar-->
+<nav class="bg-white py-0 ">
+    <div
+        class=" grid grid-flow-col lg:grid-cols-3 grid-cols-2  justify-between w-[90%] m-auto items-center font-medium ">
+        <uL class="lg:flex  justify-around hidden  ">
+            <li class="bg-[#b7cfd9] py-2 px-4 font-medium hover:bg-[#ebbaa9]  hover:text-white duration-300 delay-150">
+                <i class="fa-solid fa-bars pr-2"></i> <a routerLink="">CATALOG</a>
+            </li>
+            <li class="py-2 text-[#ebbaa9] "> <a routerLink="">Home</a></li>
+            <li class="py-2 hover:text-[#ebbaa9] duration-300 delay-150 "><a routerLink="">About Us</a></li>
+        </uL>
+        <h4 class="lg:text-center text-left  lg:text-4xl text-2xl font-medium py-5 font-mono"><a routerLink="">Aroma</a></h4>
+        <ul class="lg:flex basis-full ">
+            <ul class=" lg:flex basis-3/5 justify-around hidden">
+                <li class="py-2 relative list ">
+                    <a class="hover:text-[#ebbaa9] duration-300 delay-150 pr-1" routerLink="">Shop</a>
+                    <i class="fa-solid fa-angle-down text-xs"></i>
+                    <ul
+                        class="w-[200px] bg-white  absolute top-[150%] z-50  font-normal border-t-[2px] border-t-[#ebbaa9] sublist ">
+                        <li class="border-b-[0.5px] px-2 py-2 "> <a
+                                class="block hover:translate-x-1 delay-200 duration-[0.5s]" routerLink="">Product
+                                List</a>
+                        </li>
+                        <li class="border-b-[0.5px] px-2 py-2 "> <a
+                                class="block hover:translate-x-1 delay-200 duration-[0.5s]" routerLink="">Product
+                                Slider</a>
+                        </li>
+                        <li class="border-b-[0.5px] px-2 py-2 "> <a
+                                class="block hover:translate-x-1 delay-200 duration-[0.5s]" routerLink="">
+                                Shop Page</a>
+                        </li>
+
+                    </ul>
+                </li>
+                <li class="py-2 relative list ">
+                    <a class="hover:text-[#ebbaa9] duration-300 delay-150 pr-1" routerLink="">Blog</a>
+                    <i class="fa-solid fa-angle-down text-xs"></i>
+                    <ul
+                        class="w-[200px] bg-white  absolute top-[150%] z-50  font-normal border-t-[2px] border-t-[#ebbaa9] sublist ">
+                        <li class="border-b-[0.5px] px-2 py-2 ">
+                            <a class="block hover:translate-x-1 delay-200 duration-[0.5s]" routerLink="">Blog
+                                Listing
+                            </a>
+
+                        </li>
+                        <li class="border-b-[0.5px] px-2 py-2 "> <a
+                                class="block hover:translate-x-1 delay-200 duration-[0.5s]" routerLink="">Single
+                                Listing</a></li>
+
+                    </ul>
+                </li>
+                <li class="py-2 hover:text-[#ebbaa9] duration-300 delay-150 "><a routerLink="">Contact</a></li>
+            </ul>
+
+            <ul class="flex lg:basis-2/5  lg:justify-around justify-end lg:gap-0 gap-5  ">
+                <li class="py-2 hover:text-[#ebbaa9] duration-300 delay-150 relative cart--list">
+                    <a routerLink="">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                    </a>
+
+                    <span
+                        class="flex w-[18px] h-[18px] justify-center  items-center rounded-full bg-[#ebbaa9] text-white text-sm absolute left-full top-0">0</span>
+                    <ul
+                        class="w-[200px] bg-white bg-opacity-70  absolute top-[145%] -right-[200%] z-50  font-normal border-t-[2px] border-t-[#ebbaa9] cart--sublist ">
+                        <li class="border-b-[0.5px] px-2 py-4 "> <a class="block text-lg font-semibold" routerLink="">My
+                                Cart</a>
+                            <p class="text-sm text-slate-500 py-2">NO Items IN The Cart</p>
+                        </li>
+
+                    </ul>
+                </li>
+                <li class="py-2 hover:text-[#ebbaa9] duration-300 delay-150 "><a routerLink=""><i
+                            class="fa-solid fa-user"></i></a></li>
+            </ul>
+        </ul>
+    </div>
+</nav>

@@ -1,0 +1,72 @@
+
+
+.frontimage {
+    transform: translatex(100%);
+    transition: all 0.3s 0s;
+    position: absolute;
+    z-index: 0;
+}
+
+.first--icon--transation,
+.second--icon--transation,
+.third--icon--transation {
+    transform: translateX(150%);
+    /* transition: all 0s 0s; */
+
+}
+
+.first--icon--transation {
+    transition: all 0.3s 0.25s;
+}
+
+.second--icon--transation {
+    transition: all 0.3s 0.5s;
+
+}
+
+.third--icon--transation {
+    transition: all 0.3s 0.75s;
+
+}
+
+.overlay:hover .frontimage {
+    transform: translatex(0%);
+    z-index: 999;
+
+}
+
+.overlay:hover .first--icon--transation,
+.overlay:hover .second--icon--transation,
+.overlay:hover .third--icon--transation {
+    transform: translatex(0%);
+
+}
+/* **************************************************************** */
+.bg--layer {
+    background-image: url("../../assets/images/45-degree-fabric-light.png");
+}
+
+
+
+
+/* *************************************** */
+.right--img--slider{
+    transform: translatex(0);
+    transition: all 0.5s 0.1s;
+    transition-timing-function: ease-in-out;
+
+}
+.left--img--slider{
+    transform: translate(-200%);
+    transition: all 0.5s 0.2s;
+    transition-timing-function: ease-out;
+    
+}
+.img-container:hover .left--img--slider{
+    transform: translate(-50%);
+
+}
+.img-container:hover .right--img--slider{
+    transform: translate(350%);
+
+}
