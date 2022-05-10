@@ -9,7 +9,8 @@
             <li class="py-2 text-[#ebbaa9] "> <a routerLink="">Home</a></li>
             <li class="py-2 hover:text-[#ebbaa9] duration-300 delay-150 "><a routerLink="">About Us</a></li>
         </uL>
-        <h4 class="lg:text-center text-left  lg:text-4xl text-2xl font-medium py-5 font-mono"><a routerLink="">Aroma</a></h4>
+        <h4 class="lg:text-center text-left  lg:text-4xl text-2xl font-medium py-5 font-mono"><a routerLink="">Aroma</a>
+        </h4>
         <ul class="lg:flex basis-full ">
             <ul class=" lg:flex basis-3/5 justify-around hidden">
                 <li class="py-2 relative list ">
@@ -71,7 +72,45 @@
                 </li>
                 <li class="py-2 hover:text-[#ebbaa9] duration-300 delay-150 "><a routerLink=""><i
                             class="fa-solid fa-user"></i></a></li>
+                <li class="py-2 hover:text-[#ebbaa9] duration-300 delay-150 lg:hidden "><a routerLink="">
+                        <i class="fa-solid fa-bars pr-2" (click)="toggleNavbarCollapsing()"></i></a></li>
             </ul>
         </ul>
+    </div>
+    <!--toggleNavbarCollapsing-->
+    <div class="absolute z-10 top-0 inset-x-0 p-2 transition transform origin-top-right lg:hidden "
+        [class.hidden]="navbarCollapsed">
+        <div class="rounded-md shadow-md bg-white ring-1 ring-black ring-opacity-5 overflow-hidden">
+            <div class="px-5 pt-4 flex items-center justify-end">
+                <div class="-mr-2">
+                    <button type="button"
+                        class="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500"
+                        (click)="toggleNavbarCollapsing()">
+                        <span class="sr-only">Close main menu</span>
+                        <svg class="h-6 w-6  " xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                            stroke-width="2" stroke="currentColor" aria-hidden="true">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            <div class="px-2 pt-2 pb-3 space-y-1">
+                <a href="#"
+                    class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50">Home</a>
+
+                <a href="#"
+                    class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50">About
+                    Us</a>
+
+                <a href="#"
+                    class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50">Shop</a>
+
+                <a href="#"
+                    class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50">Blog</a>
+                <a href="#"
+                    class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50">Contact</a>
+            </div>
+
+        </div>
     </div>
 </nav>
